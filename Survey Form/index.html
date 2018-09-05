@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='portfolio.css' rel='stylesheet' type='text/css' />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  <body>
+    <div id="title-description-container">
+      <h1 id="title">Cat Survey</h1>
+      <p id="description">
+        Let's find couple for Camper Cat
+      </p>
+    </div>
+    <div id="form-container">
+      <form id="survey-form" action="/submit-survey">
+        <div class="form-element">
+          <label for="name" id="name-label"><span class="asterisk">*</span> Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-element">
+          <label for="email" id="email-label"><span class="asterisk">*</span> Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-element">
+          <label for="number" id="number-label">Age:</label>
+          <input type="number" id="number" name="number" placeholder="Enter your age" min=0 max=40>
+        </div>
+        <div class="form-element">
+          <label for="dropdown" id="dropdown-label">Gender:</label>
+          <select id="dropdown">
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <legend>What is your favorite toy</legend>
+            <div id="toys">
+              <div>
+                <input id="toy-one" type="radio" name="toys" value="toy-one">
+                <label for="toy-one">Catnip</label>
+              </div>
+              <div>
+                <input id="toy-two" type="radio" name="toys" value="toy-two">
+                <label for="toy-two">Post</label>
+              </div>
+              <div>
+                <input id="toy-three" type="radio" name="toys" value="toy-three">
+                <label for="toy-three">Cat tunnel</label>
+              </div>
+              <div>
+                <input id="toy-other" type="radio" name="toys" value="toy-other">
+                <label for="toy-other"><input type="text" id="toy-other-text" name="toy-other-text" placeholder="Specify if other">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>What are your colors</legend>
+            <div id="colors">
+              <div>
+  			      	<input id="color-one" type="checkbox" name="colors" value="color-one">
+                <label for="color-one">White</label>
+      	  		</div>
+      		  	<div>
+      			  	<input id="color-two" type="checkbox" name="colors" value="color-two">
+      				  <label for="color-two">Black</label>
+        			</div>
+      	  		<div>
+      		  		<input id="color-three" type="checkbox" name="colors" value="color-three">
+      			  	<label for="color-three">Ginger</label>
+        			</div>
+      	  		<div>
+      		  		<input id="color-four" type="checkbox" name="colors" value="color-four">
+      			  	<label for="color-four">Grey</label>
+        			</div>
+      	  		<div>
+      		  		<input id="color-five" type="checkbox" name="colors" value="color-five">
+      			  	<label for="color-five">Cream</label>
+        			</div>
+      	  		<div>
+      		  		<input id="color-six" type="checkbox" name="colors" value="color-six">
+      			  	<label for="color-six">Brown</label>
+        			</div>
+      	  		<div>
+      		  		<input id="color-seven" type="checkbox" name="colors" value="color-seven">
+      			  	<label for="color-seven">Cinnamon</label>
+        			</div>
+      	  		<div>
+      		  		<input id="color-eight" type="checkbox" name="colors" value="color-eight">
+      			  	<label for="color-eight">Fawn</label>
+        			</div>
+      	  		<div>
+      		  		<input id="color-nine" type="checkbox" name="colors" value="color-nine">
+        				<label for="color-nine"><input type="text" id="color-nine-text" name="color-nine-text" placeholder="Specify if other"></label>
+              </div>
+    		    </div>
+          </fieldset>
+        </div>
+        <div class="form-element">
+          <label for="comments" id="comments-label">Additional comments:</label>
+          <textarea id="comments" name="comments" rows="6" placeholder="Add something about you..."></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -2,7 +2,8 @@ body {
   margin-left: 0;
   font-family: Lato,georgia,serif;
   font-size: 18px;
-  background: url("miau25.jpg");
+  background: url("https://cdn.rawgit.com/dmunozan/freeCodeCamp/dc7c5751/Product%20Landing%20Page/catbackground.jpg");
+  background-color: #C5E39B;
   background-size: 100% auto;
   background-position: 0 80px;
 }

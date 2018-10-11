@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Lucida Grande', Arial, sans-serif;
+}
+
+header {
+  font-size: 28px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  border-right: 2px solid grey;
+}
+
+#navbar header:before {
+  display: inline-block;
+  height: 100%;
+  content: "";
+  vertical-align: middle;
+}
+
+#navbar header {
+  height: 25%;
+  text-align: center;
+}
+
+#navbar ul {
+  overflow-y: auto;
+  height: 75%;
+  margin-top: 0;
+  font-size: 16px;
+  list-style: none;
+}
+
+#navbar a:link,
+#navbar a:visited,
+#navbar a:hover,
+#navbar a:active {
+  color: black;
+  text-decoration: none;
+}
+
+#navbar li {
+  height: 20px;
+  padding: 10px 0 10px 40px;
+  border-top: 1px solid black;
+  margin-left: -40px;
+}
+
+#main-doc {
+  position: relative;
+  margin: 30px 35px 0 335px;
+}
+
+section {
+  margin-left: 20px;
+}
+
+section header {
+  margin-left: -20px;
+}
+
+pre {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: gray;
+  line-height: 2;
+}
+
+@media (max-width: 815px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    border-right: none;
+  }
+
+  #navbar header {
+    height: 60px;
+  }
+
+  #navbar ul {
+    overflow-y: scroll;
+	width: 100%;
+    height: 200px;
+    border-top: 1px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 0;
+    margin-left: -40px;
+    font-size: 16px;
+    list-style: none;
+  }
+
+  #navbar li {
+	border-left: 1px solid black;
+    margin-left: 0;
+  }
+
+  #main-doc {
+    margin: 20px 35px 0 25px;
+ }
+}

@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(https://cdn.rawgit.com/dmunozan/freeCodeCamp/3f056e9a/Survey%20Form/paw-prints-background.jpg);
+  background: url(https://cdn.jsdelivr.net/gh/dmunozan/freeCodeCamp@3f056e9a2539cfba8ef2fb02b003d010f1989063/Survey%20Form/paw-prints-background.jpg);
   background-size: cover;
 }
 

@@ -1,12 +1,10 @@
 function reverseString(str) {
-  var auxArray = []; // Auxiliar array to work with the string
+  let revStr = "";
   
-  // Loop to push the characters of the string in the array
-  for (var i = 0; i < str.length; i++){
-    auxArray.push(str.charAt(i));
+  // Loop through str adding the chars reversed
+  for (let i = str.length-1; i > -1; i--) {
+    revStr += str[i];
   }
   
-  // Reverse the array and join without nothing to create the reversed string
-  auxArray.reverse();
-  return auxArray.join("");
+  return revStr;
 }

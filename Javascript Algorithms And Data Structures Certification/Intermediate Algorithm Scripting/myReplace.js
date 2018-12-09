@@ -21,6 +21,9 @@
  */
 
 function myReplace(str, before, after) {
+  // Create regex to change all the occurrences
+  var regexBefore = new RegExp(before, "gi");
+
   // Check the case of the first letter of before, change after accordingly and save it on auxAfter
   var auxAfter;
   if (before.charAt(0).match(/^[A-Z]/)) {
@@ -30,5 +33,5 @@ function myReplace(str, before, after) {
   }
 
   // Replace str before with auxAfter
-  return str.replace(before, auxAfter);
+  return str.replace(regexBefore, auxAfter);
 }

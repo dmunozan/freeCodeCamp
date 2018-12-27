@@ -40,7 +40,7 @@ function palindrome(str) {
       return false;
     }
   }
-
-  // Good luck!
+  
+  // Return true if no difference is found
   return true;
 }

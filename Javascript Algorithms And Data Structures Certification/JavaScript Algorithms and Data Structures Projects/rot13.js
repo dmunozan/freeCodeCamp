@@ -16,7 +16,7 @@
  * rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.") should decode to THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
  */
 
-function rot13(str) { // LBH QVQ VG!
+function rot13(str) {
   
   // Function to decode each char
   function decodeChar(char) {
